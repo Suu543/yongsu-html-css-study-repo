@@ -26,10 +26,10 @@ Flexbox를 요약하자면
 
 ## Flexbox Part1
 
-- **flex**
-- **flex-direction**
-- **flex-wrap**
-- **flex-flow**
+- `flex`
+- `flex-direction`
+- `flex-wrap`
+- `flex-flow`
 
 `Flexbox`는 부모 자식 관계가 형성된 태그 사이에 적용할 수 있는 속성입니다.
 
@@ -123,19 +123,19 @@ Flexbox를 요약하자면
 
 - `Keyword`: 주축(main-axis), 교차축(cross-axis)
 
-1. **flex-direction: row;** (왼쪽 ==> 오른쪽 (열 - 가로 정렬)): 기본값
+1. `flex-direction: row;` (왼쪽 ==> 오른쪽 (열 - 가로 정렬)): 기본값
 
 - 주축(main-axis): 가로, 교차축(cross-axis): 세로
 
-2. **flex-direction: row-reverse;** (오른쪽 ==> 왼쪽 (열 - 가로 정렬))
+2. `flex-direction: row-reverse;` (오른쪽 ==> 왼쪽 (열 - 가로 정렬))
 
 - 주축(main-axis): 가로, 교차축(cross-axis): 세로
 
-3. **flex-direction: column;** (위 ==> 아래 (행 - 세로 정렬))
+3. `flex-direction: column;` (위 ==> 아래 (행 - 세로 정렬))
 
 - 주축(main-axis): 세로, 교차축(cross-axis): 가로
 
-4. **flex-direction: column-reverse;** (아래 ==> 위 (행 - 세로 정렬))
+4. `flex-direction: column-reverse;` (아래 ==> 위 (행 - 세로 정렬))
 
 - 주축(main-axis): 세로, 교차축(cross-axis): 가로
 
@@ -146,9 +146,9 @@ Flexbox를 요약하자면
 
 ### flex-wrap
 
-- **flex-wrap: nowrap;**
-- **flex-wrap: wrap;**
-- **flex-wrap: wrap-reverse;**
+- `flex-wrap: nowrap;`
+- `flex-wrap: wrap;`
+- `flex-wrap: wrap-reverse;`
 
 다음과 같이 값이 정의된 상황을 생각해보겠습니다. (`Item`: 12개)
 
@@ -301,44 +301,44 @@ flex; flex-flow: row-reverse wrap; }
 
 ## Flexbox Part2
 
-- **justify-content**
-- **align-items**
-- **align-content**
+- `justify-content`
+- `align-items`
+- `align-content`
 
-`display: flex;`를 정의하는 순간 **주축(main-axis)**과 **교차축(cross-axis)**의 개념이 발생합니다.
+`display: flex;`를 정의하는 순간 `주축(main-axis)`과 `교차축(cross-axis)`의 개념이 발생합니다.
 
 정렬 방식은 네 종류가 있습니다.
 
-- `Keywords`: **주축(main-axis), 교차축(cross-axis)**
+- `Keywords`: `주축(main-axis)`, `교차축(cross-axis)`
 
-1. **flex-direction: row;** (왼쪽 ==> 오른쪽 (열 - 가로 정렬)): 기본값
-
-- 주축(main-axis): 가로, 교차축(cross-axis): 세로
-
-2. **flex-direction: row-reverse;** (오른쪽 ==> 왼쪽 (열 - 가로 정렬))
+1. `flex-direction: row;` (왼쪽 ==> 오른쪽 (열 - 가로 정렬)): 기본값
 
 - 주축(main-axis): 가로, 교차축(cross-axis): 세로
 
-3. **flex-direction: column;** (위 ==> 아래 (행 - 세로 정렬))
+2. `flex-direction: row-reverse;` (오른쪽 ==> 왼쪽 (열 - 가로 정렬))
+
+- 주축(main-axis): 가로, 교차축(cross-axis): 세로
+
+3. `flex-direction: column;` (위 ==> 아래 (행 - 세로 정렬))
 
 - 주축(main-axis): 세로, 교차축(cross-axis): 가로
 
-4. **flex-direction: column-reverse;** (아래 ==> 위 (행 - 세로 정렬))
+4. `flex-direction: column-reverse;` (아래 ==> 위 (행 - 세로 정렬))
 
 - 주축(main-axis): 세로, 교차축(cross-axis): 가로
 
 ### justify-content
 
-이 속성은 **주축(main-axis)** 기준으로 요소를 정렬할 때 사용하는 속성입니다.
+이 속성은 `주축(main-axis)` 기준으로 요소를 정렬할 때 사용하는 속성입니다.
 
 `justify-content` 설명에 사용한 예시는 `flex-direction: row;`를 기준으로 작성했습니다.
 
-- **justify-content: flex-start;**
-- **justify-content: center;**
-- **justify-content: flex-end;**
-- **justify-content: space-between;**
-- **justify-content: space-evenly;**
-- **justify-content: space-around;**
+- `justify-content: flex-start;`
+- `justify-content: center;`
+- `justify-content: flex-end;`
+- `justify-content: space-between;`
+- `justify-content: space-evenly;`
+- `justify-content: space-around;`
 
 ```html
 <!DOCTYPE html>
@@ -378,67 +378,91 @@ flex; flex-flow: row-reverse wrap; }
 
 주축(main-axis) 시작점 위치에 요소를 정렬하고 싶은 경우
 
-- **justify-content: flex-start**;
+- `justify-content: flex-start`;
 
-```html
-ul { display: flex; flex-direction: row; justify-content: flex-start; }
+```css
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/e0f13f9c65c154595ddc1729cd98fb84bf55817fef0c9fb2fdfd31acfa1f2836/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a614268676d49794576666c36766462314458683264772e706e67" />
 
 주축(main-axis) 끝 위치에 요소를 정렬하고 싶은 경우
 
-- **justify-content: flex-end;**
+- `justify-content: flex-end;`
 
-```html
-ul { display: flex; flex-direction: row; justify-content: flex-end; }
+```css
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/40e6700371119ab92d7ce315b417e9d019ad287fa8fde52646270ae8c0957452/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a61536e6533666753685053745f416b707a70354b44412e706e67" />
 
 주축(main-axis) 가운데 요소를 정렬하고 싶은 경우
 
-- **justify-content: center;**
+- `justify-content: center;`
 
-```html
-ul { display: flex; flex-direction: row; justify-content: center; }
+```css
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/0ad5d98f6fd3d9d5fbc7aa8fd283c0678cd24d2b9aac5170de4ccdf6859c8a73/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a6264374d66724e5a72474b3435693835645a427438412e706e67" />
 
 주축(main-axis) 양쪽 끝 지점에 위치한 요소를 제외한, 나머지 요소를 균등한 간격을 배치하고 싶은 경우
 
-- **justify-content: space-between;**
+- `justify-content: space-between;`
 
-```html
-ul { display: flex; flex-direction: row; justify-content: space-between; }
+```css
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/faac0593db29288560ae91256dbafc4687a48d9ed1cf027c8b6588152dcbf00c/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a626142746f51546731655f3031395331484e68674b512e706e67" />
 
 주축(main-axis) 양쪽 끝 지점에 있는 요소를 포함해, 모든 요소의 왼쪽, 오른쪽에 균등한 간격을 배치하고 싶은 경우 (이 경우 양쪽 끝 지점에 있는 요소는 왼쪽 혹은 오른쪽 한 칸의 간격밖에 없으므로 균등한 간격이 아닌 것처럼 보일 수 있습니다.)
 
-- **justify-content: space-around;**
+- `justify-content: space-around;`
 
-```html
-ul { display: flex; flex-direction: row; justify-content: space-around; }
+```css
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/590b8a8a6e98e66ba02a73b315e48f4bdfe2e02908e2fb625b31de8563755b2f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a45585f4a6f6e47476a75656f6174416e7159677676512e706e67" />
 
 주축(main-axis) 양쪽 끝 지점을 포함한 모든 요소를 균등한 간격으로 배치하고 싶은 경우
 
-- **justify-content: space-evenly;**
+- `justify-content: space-evenly;`
 
-```html
-ul { display: flex; flex-direction: row; justify-content: space-evenly; }
+```css
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/4a194cc42e8b4b76aa21ba01e71d9ce37342dca5d11b534d1c2e02e1f68939d4/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a545636733030575a4e35694f55775169477533694e412e706e67" />
 
 ### align-items
 
-이 속성은 **교차축(cross-axis)** 기준으로 요소를 정렬할 때 사용하는 속성입니다.
+이 속성은 `교차축(cross-axis)` 기준으로 요소를 정렬할 때 사용하는 속성입니다.
 
 `align-items` 설명에 사용한 예시는 `flex-direction: row;`를 기준으로 작성했습니다.
 
@@ -481,53 +505,75 @@ ul { display: flex; flex-direction: row; justify-content: space-evenly; }
 </html>
 ```
 
-교차축(cross-axis) 정렬을 별도로 정의하지 않으면, `align-items: stretch;` 속성이 적용됩니다.
+`교차축(cross-axis)` 정렬을 별도로 정의하지 않으면, `align-items: stretch;` 속성이 적용됩니다.
 
 - align-items: stretch;
 
-```html
-ul { display: flex; flex-direction: row; align-items: stretch; }
+```css
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/b80b3c2468121f081ec4b2393916e2a97abada154defaac802773ffce0662d1e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a694872764c4445327558545f46534e636e414d6b41672e706e67" />
 
-교차축(cross-axis) 시작점 위치에 요소를 정렬하고 싶은 경우
+`교차축(cross-axis)` 시작점 위치에 요소를 정렬하고 싶은 경우
 
-- **align-items: flex-start;**
+- `align-items: flex-start;`
 
-```html
-ul { display: flex; flex-direction: row; align-items: flex-start; }
+```css
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/fec103d4352c16e0cef5633eeaaf2eb1b15a0a9c6c7b09a2a4892ad3c7eb0b30/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a58777032366c692d6439565f6f747670644b683841672e706e67" />
 
-교차축(cross-axis) 끝 위치에 요소를 정렬하고 싶은 경우
+`교차축(cross-axis)` 끝 위치에 요소를 정렬하고 싶은 경우
 
-- **align-items: flex-end;**
+- `align-items: flex-end;`
 
-```html
-ul { display: flex; flex-direction: row; align-items: flex-end; }
+```css
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/3b1851df4f2827150ad25dbb7d1a868b0e1716d85d58b2cb8990d6f3365cd539/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a577536724b7a336f6b78354d6c396b315f54637133672e706e67" />
 
-교차축(cross-axis) 가운데 요소를 정렬하고 싶은 경우
+`교차축(cross-axis)` 가운데 요소를 정렬하고 싶은 경우
 
-- **align-items: center;**
+- `align-items: center;`
 
-```html
-ul { display: flex; flex-direction: row; align-items: center; }
+```css
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/b166b008e388352d9dffb6dd5e0b01af2ae175c30431fc9dfc3ccbdd7e9a0088/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a6c567a64466b44567449785f495773654764474479412e706e67" />
 
-교차축(cross-axis) 정렬 과정에 `패딩(padding)` 등의 영향으로 글자 높이가 다른 경우, 모든 글자를 같은 높이에 정렬하고 싶은 경우
+`교차축(cross-axis)` 정렬 과정에 `패딩(padding)` 등의 영향으로 글자 높이가 다른 경우, 모든 글자를 같은 높이에 정렬하고 싶은 경우
 
-- **align-items: baseline;**
+- `align-items: baseline;`
 
-```html
-li:first-child { padding: 5px; } ul { display: flex; flex-direction: row;
-align-items: baseline; }
+```css
+li:first-child {
+  padding: 5px;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/b8d0014fe8b43500ebcdf9b73b93e3770923ef6ea1b6942664091983067647a8/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a7942733455473178616a334e565572596b774c6b39772e706e67" />
@@ -592,22 +638,26 @@ align-items: baseline; }
 
 <img src="https://camo.githubusercontent.com/b8d0014fe8b43500ebcdf9b73b93e3770923ef6ea1b6942664091983067647a8/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a7942733455473178616a334e565572596b774c6b39772e706e67" />
 
-모든 요소(두 줄 이상)가 차지할 수 있는 모든 교차축(cross-axis) 공간을 차지하고 싶은 경우
+모든 요소(두 줄 이상)가 차지할 수 있는 모든 `교차축(cross-axis)` 공간을 차지하고 싶은 경우
 
-- **align-content: stretch;**
+- `align-content: stretch;`
 
-```html
-ul { align-content: stretch; }
+```css
+ul {
+  align-content: stretch;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/efce54ec9c9792d94d16401c8a30759b8d2eb39e67eb3a01b105ecf5ce51c1da/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a4c5f4645726c506f514933515f5f37775647316430412e706e67" />
 
-교차축(cross-axis) 시작점 위치에 요소(두 줄 이상)를 정렬하고 싶은 경우
+`교차축(cross-axis)` 시작점 위치에 요소(두 줄 이상)를 정렬하고 싶은 경우
 
-- **align-content: flex-start;**
+- `align-content: flex-start;`
 
-```html
-ul { align-content: flex-start; }
+```css
+ul {
+  align-content: flex-start;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/4227fbaf1c5527ec2d49b8c540a3e18aac1cf518d42f4beb4f221eaebbb1a3d2/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a686f5f4a746d5244667233696231684e526f354830772e706e67" />
@@ -618,40 +668,48 @@ ul { align-content: flex-start; }
 
 교차축(cross-axis) 끝 위치에 요소(두 줄 이상)를 정렬하고 싶은 경우
 
-- **align-content: flex-end;**
+- `align-content: flex-end;`
 
-```html
-ul { align-content: flex-end; }
+```css
+ul {
+  align-content: flex-end;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/dcee6b05f065056456f6f55e2367d8f9deaf9871cf7fb810bcf88d5b8fe4f1dc/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a546a6275665966306a41464d564f34516e6841316b412e706e67" />
 
 교차축(cross-axis) 양쪽 끝 지점에 위치한 요소를 제외한, 나머지 요소를 균등한 가격으로 배치하고 싶은 경우
 
-- **align-content: space-between;**
+- `align-content: space-between;`
 
-```html
-ul { align-content: space-between; }
+```css
+ul {
+  align-content: space-between;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/3198479ec9fbf10d8549279f4f0b6093c8fb82f8ca6612548630825f6751e47a/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a58565f55573554466b37485866412d68412d4d7943412e706e67" />
 
 교차축(cross-axis) 양쪽 끝 지점에 있는 요소를 포함해 모든 요소를 균등한 간격으로 배치하고 싶은 경우 (이 경우 양쪽 끝 지점에 있는 요소는 왼/오 혹은 위/아래 한 칸의 간격밖에 없으므로 균등한 간격이 아닌 것처럼 보일 수 있습니다.)
 
-- **align-content: space-around;**
+- `align-content: space-around;`
 
-```html
-ul { align-content: space-around; }
+```css
+ul {
+  align-content: space-around;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/77ae9c6fce88019c0235d632b4e7e0deb066b3344e371f029901f0726b87bbad/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a307a35437a6a7732704a77457071646a4d5a4a6563412e706e67" />
 
 교차축(cross-axis) 양쪽 끝 지점을 포함한 모든 요소를 균등한 간격으로 배치하고 싶은 경우
 
-- **align-content: space-evenly;**
+- `align-content: space-evenly;`
 
-```html
-ul { align-content: space-evenly; }
+```css
+ul {
+  align-content: space-evenly;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/77ae9c6fce88019c0235d632b4e7e0deb066b3344e371f029901f0726b87bbad/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a307a35437a6a7732704a77457071646a4d5a4a6563412e706e67" />
@@ -660,7 +718,7 @@ ul { align-content: space-evenly; }
 
 ## Exercise
 
-주축(main-axis)을 `column` 방식으로 변경해 다음 속성 연습해보기.
+`주축(main-axis)`을 `column` 방식으로 변경해 다음 속성 연습해보기.
 
 - justify-content
 - align-items
@@ -668,10 +726,10 @@ ul { align-content: space-evenly; }
 
 ## Flexbox Part3
 
-- **flex-grow**
-- **flex-shrink**
-- **flex-basis**
-- **flex**
+- `flex-grow`
+- `flex-shrink`
+- `flex-basis`
+- `flex`
 
 ### flex-grow
 
@@ -714,8 +772,10 @@ ul { align-content: space-evenly; }
 
 `flex-grow`를 사용하지 않으면 본래 요소에 정의된 `width, padding, border`를 기준으로 기반해 크기가 설정됩니다.
 
-```html
-li:first-child { flex-grow: 1; }
+```css
+li:first-child {
+  flex-grow: 1;
+}
 ```
 
 첫번째 `li` 태그에 `flex-grow: 1;`값을 설정하면, 2 ~ 4번째 `li` 태그의 경우 기존에 정의된 가로 크기를 유지하고 있지만, 첫번째 `li` 태그는 `부모(Container)` 요소에 남은 공간 전체를 채우고 있는 것을 확인할 수 있습니다.
@@ -724,8 +784,10 @@ li:first-child { flex-grow: 1; }
 
 세번째 `li` 태그에 `flex-grow: 2`을 설정하면, `flex-grow: 0`으로 설정된 2번째, 세번째 요소를 제외하고, `flex-grow` 값이 1 이상 정의된 첫 번째 `li` 태그와 `1:2` 비율로 `부모(Container)` 요소에 남은 공간을 채우고 있는 것을 확인할 수 있습니다.
 
-```html
-li:nth-child(3) { flex-grow: 2 }
+```css
+li:nth-child(3) {
+  flex-grow: 2;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/b7403f52d7bea683d2f1e13a2ffd9156bf9c968ef6cfad2edfdf91254d57f50a/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a6b6f436b5739475a4955424b7178595f5a646f3751772e706e67" />
@@ -742,7 +804,7 @@ li:nth-child(3) { flex-grow: 2 }
 
 Ex)
 
-- **flex-shrink: 0;**
+- `flex-shrink: 0;`
 
 ```html
 <!DOCTYPE html>
@@ -788,7 +850,7 @@ Ex)
 
 `Item`이 `Container` 내부에서 얼마의 공간을 차지할지를 보다 명시적으로 정의할 때 `flex-basis` 속성을 사용할 수 있습니다.
 
-기본값: **flex-basis: auto;**
+기본값: `flex-basis: auto;`
 
 - `auto`로 설정된 경우 `flex-grow` and `flex-shrink` 값에 맞춰 크기가 결정됩니다.
 
@@ -862,7 +924,7 @@ Ex)
 
 ### flex
 
-flex = **flex-grow flex-shrink flex-basis**
+flex = `flex-grow flex-shrink flex-basis`
 
 `flex` 속성은 `flex-grow`, `flex-shrink` and `flex-basis` 세 속성을 한 번에 작성할 수 있는 축약형입니다. 사용할 때 주의 사항은 `flex: 1;` 값으로 정의한 경우 `flex-basis` 속성은 `0px or 0%`로 간주하여 `flex-container` 내부 공간에 맞춰 크기가 설정됩니다. 이러한 상태를 `Absolute Flex Item` 칭합니다.
 
@@ -918,9 +980,9 @@ flex = **flex-grow flex-shrink flex-basis**
 
 ## Flexbox Part4
 
-- **order**
-- **align-self**
-- **gap**
+- `order`
+- `align-self`
+- `gap`
 
 ### order
 
@@ -1028,34 +1090,43 @@ flex = **flex-grow flex-shrink flex-basis**
 </html>
 ```
 
-- **align-self: flex-end;**
+- `align-self: flex-end;`
 
-```html
-li:first-child { align-self: flex-end; }
+```css
+li:first-child {
+  align-self: flex-end;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/70e3212f8942a582750ec9fe88d52f844f738fe2d79eed5dc1360d0e373aa91f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a4e3249534c6f5951634151786f3169704e6c354345512e706e67" />
 
-- **align-self: center;**
+- `align-self: center;`
 
-```html
-li:first-child { align-self: center; }
+```css
+li:first-child {
+  align-self: center;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/61a6c56fd0ab64d062a340d7eb4b050d88303f521721229fb9ae8f5ef6553248/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a69447964684f68494934794d4572507045636e496f672e706e67" />
 
-- **align-self: stretch;**
+- `align-self: stretch;`
 
-```html
-li:first-child { align-self: stretch; }
+```css
+li:first-child {
+  align-self: stretch;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/66a1b2bf8c340c27f12034315da0654b69ab3f678761cf20bfeb83333e63dd0f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a30797964397748674e6e3235726f6f587936796230672e706e67" />
 
-- **align-self: baseline;**
+- `align-self: baseline;`
 
-```html
-li:first-child { align-self: baseline; padding: 5px }
+```css
+li:first-child {
+  align-self: baseline;
+  padding: 5px;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/1a314642155fe98d90fc7a415d2a6bec8dafefb6332ada26639242bdc3c7ba88/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a4e76713444545a414f716437514151557231756a68672e706e67" />
@@ -1068,8 +1139,8 @@ li:first-child { align-self: baseline; padding: 5px }
 
 `margin` 속성은 인접한 요소에 어떤 `display` 속성이 있는지 혹은 다른 요소가 존재하는지에 상관없이 공간을 만듭니다. 하지만 `gap`의 경우 인접한 요소가 없는 경우 불필요한 공간을 만들지 않습니다. 즉, 불필요한 공간을 만들지 않기 때문에 더욱 정렬된 상태의 레이아웃을 구현할 수 있도록 해줍니다.
 
-- **gap: 값 (하나의 값만 적는 경우 요소의 상하 좌우에 해당 값이 적용됩니다)**
-- **gap: 값 값 (두 개의 값을 적는 경우 첫 번째 값은 상하, 두 번째 값은 좌우에 적용됩니다)**
+- `gap: 값 (하나의 값만 적는 경우 요소의 상하 좌우에 해당 값이 적용됩니다)`
+- `gap: 값 값 (두 개의 값을 적는 경우 첫 번째 값은 상하, 두 번째 값은 좌우에 적용됩니다)`
 
 ```html
 <!DOCTYPE html>
@@ -1113,18 +1184,22 @@ li:first-child { align-self: baseline; padding: 5px }
 
 <img src="https://cdn-images-1.medium.com/max/800/1*a7L83RrN9z-E6Nb9Sb87LA.png" />
 
-- **gap: 10px;** (상하좌우 10px 적용)
+- `gap: 10px;` (상하좌우 10px 적용)
 
-```html
-ul { gap: 10px; }
+```css
+ul {
+  gap: 10px;
+}
 ```
 
 <img src="https://cdn-images-1.medium.com/max/800/1*0jEsygQWj_Tb2ABuD7PpNQ.png" />
 
 - gap: 20px 40px; (상하 20px, 좌우: 40px 적용)
 
-```html
-ul { gap: 20px 40px;}
+```css
+ul {
+  gap: 20px 40px;
+}
 ```
 
 <img src="https://cdn-images-1.medium.com/max/800/1*sxUDrWluEnbov5nOLDuvjA.png" />
