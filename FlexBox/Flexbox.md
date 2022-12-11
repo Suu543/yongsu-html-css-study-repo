@@ -280,9 +280,14 @@ Ex)
 - flex-direction: column;
 - flex-wrap: wrap;
 
-```html
-ul { background-color: lightslategray; padding: 20px; height: 300px; display:
-flex; flex-flow: column wrap; }
+```css
+ul {
+  background-color: lightslategray;
+  padding: 20px;
+  height: 300px;
+  display: flex;
+  flex-flow: column wrap;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/edb6a03141c33bb3b2fe839dd508c6870ec10617266824ad1624c7d3a5633655/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a776971776a464b65352d322d5f314e303056373567772e706e67" />
@@ -292,9 +297,14 @@ Ex)
 - flex-direction: row-reverse;
 - flex-wrap: wrap;
 
-```html
-ul { background-color: lightslategray; padding: 20px; height: 300px; display:
-flex; flex-flow: row-reverse wrap; }
+```css
+ul {
+  background-color: lightslategray;
+  padding: 20px;
+  height: 300px;
+  display: flex;
+  flex-flow: row-reverse wrap;
+}
 ```
 
 <img src="https://camo.githubusercontent.com/2dbc543c421c6567304d0d727770550fb79497c4106c877c0c7d4bec63e22978/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a495456354162586a35515466453155676b43797547672e706e67" />
