@@ -930,7 +930,7 @@ Ex)
 
 <img src="https://cdn-images-1.medium.com/max/800/1*StfHOnuPm9zotgl-pjsI2A.png" />
 
-`flex-basis` 속성을 요약하자면 `flex-grow` and `flex-shrink` 속성이 있는 경우 정의된 값보다 주축 크기가 커질 수 있지만, 두 속성을 명시하지 않은 상태에서는 작성된 크기에 맞춰 두 속성이 있는 것처럼 동작합니다. 또한 이 크기에 맞춰 `flex-wrap`이 발생합니다.
+`flex-basis` 속성을 요약하자면 `flex-grow` and `flex-shrink` 속성이 있는 경우 정의된 값보다 주축 크기가 커질 수 있지만 (단, 자기 자신을 제외한 다른 요소에 flex-grow | flex-shrink 속성이 명시되지 않았을 때), 두 속성을 명시하지 않은 상태에서는 작성된 크기에 맞춰 두 속성이 있는 것처럼 동작합니다. 또한 이 크기에 맞춰 `flex-wrap`이 발생합니다.
 
 ### flex
 
