@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #181818;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.color1 {
+  background-color: #173f5f;
+}
+
+.color2 {
+  background-color: #20639b;
+}
+
+.color3 {
+  background-color: #3caea3;
+}
+
+.color4 {
+  background-color: #f6d55c;
+}
+
+.color5 {
+  background-color: #ed553b;
+}
